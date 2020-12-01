@@ -1,0 +1,48 @@
+{
+  "name": "t-cart",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-v4-rtl": "^4.5.2-1",
+    "jalali-react-datepicker": "^1.2.1",
+    "moment-jalaali": "^0.9.2",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-cookie": "^4.0.3",
+    "react-countdown": "^2.3.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
+    "react-loader-spinner": "^3.1.14",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-toastify": "^6.1.0",
+    "web-vitals": "^0.2.4",
+    "yup": "^0.31.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

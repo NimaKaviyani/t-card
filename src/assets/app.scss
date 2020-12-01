@@ -1,0 +1,142 @@
+/* Bootstrap Variables */
+$primary: #6D48E5;
+$border-radius: 1px;
+/* Bootstrap */
+@import "node_modules/bootstrap-v4-rtl/scss/bootstrap-rtl";
+/* React Toastify */
+@import "node_modules/react-toastify/scss/main";
+/* Vazir Font */
+@import "fonts/vazir/vazir";
+/* Global Styles */
+body {
+    font: {
+        family: "Vazir", Tahoma, sans-serif;
+    }
+    direction: rtl;
+    text-align: right;
+}
+.loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000021;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        display: flex;
+    }
+}
+.ltr {
+    direction: ltr;
+
+    &::placeholder {
+        direction: rtl;
+    }
+
+    &.en {
+        &::placeholder {
+            direction: ltr;
+            text-align: left;
+        }
+    }
+}
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.Toastify__toast {
+    font-family: "Vazir", Tahoma, sans-serif;
+}
+small, .small {
+    font-size: 80% !important;
+    font-weight: 400 !important;
+}
+/* Auth Styles */
+.public-layout {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.auth-form {
+    border: 1px solid #CECECE;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.4);
+    padding: 30px 20px;
+    position: relative;
+
+    small.text-danger {
+        position: absolute;
+    }
+}
+.before-code {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: height .5s ease, opacity .5s ease;
+
+    &.active {
+        height: auto;
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+    }
+}
+.after-code {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: height .5s ease, opacity .5s ease;
+
+    &.active {
+        height: auto;
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        overflow: visible;
+    }
+}
+/* Header Styles */
+.dropdown-toggle {
+    &.nav-link {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    &::after {
+        margin-right: 0;
+        margin-left: 0.255em;
+    }
+}
+.avatar-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    img {
+        width: 50px;
+        border-radius: 50%;
+        margin-right: .5rem;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+}
